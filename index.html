@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coptic & Dialects Bible Reader</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- html2pdf for exporting selections -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Coptic Multilingual Bible</h1>
+        <div class="controls">
+            <input type="text" id="bookInput" placeholder="Book (e.g., Genesis)">
+            <input type="number" id="chapterInput" placeholder="Chapter" value="1">
+            <button onclick="loadChapter()">Load Chapter</button>
+            <input type="text" id="searchInput" placeholder="Search entire Bible...">
+            <button onclick="searchBible()">Search</button>
+            <button onclick="printSelectedToPDF()" class="pdf-btn">Print Selected to PDF</button>
+        </div>
+    </header>
+
+    <main id="contentArea">
+        <p class="placeholder-text">Enter a book and chapter above to begin reading.</p>
+    </main>
+
+    <!-- Source Image Modal -->
+    <div id="imageModal" class="modal" style="display:none;">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="sourceImage">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
