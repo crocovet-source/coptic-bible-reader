@@ -1,4 +1,4 @@
-const API_URL = https://script.google.com/macros/s/AKfycbyoZHqbZKic2QEIxhjB8oy06LDcSReS-ACJlS7uf3gbPGrejS35gFAcNj2Od4UfgA_G/exec;
+const API_URL = "https://script.google.com/macros/s/AKfycbyoZHqbZKic2QEIxhjB8oy06LDcSReS-ACJlS7uf3gbPGrejS35gFAcNj2Od4UfgA_G/exec";
 
 async function loadChapter() {
     const book = document.getElementById("bookInput").value.trim();
